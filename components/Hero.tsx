@@ -48,7 +48,7 @@ export default function Hero() {
           <div className={styles.eyebrowRow}>
             <span className={styles.liveBadge}>
               <span className={styles.liveDot} />
-              <span>Disponible maintenant</span>
+              <span>Vous avez une entreprise ?</span>
               <span className={styles.liveSep} aria-hidden="true">
                 •
               </span>
@@ -67,11 +67,6 @@ export default function Hero() {
             NHBoost vous génère plus de demandes qualifiées, plus de rendez-vous,
             plus de clients et plus de chiffre d'affaires grâce à un système
             d'acquisition clé en main.
-          </p>
-
-          <p className={styles.complement}>
-            On s'occupe de tout pour vous : stratégie, publicités, contenus,
-            campagnes, optimisation et génération de prospects.
           </p>
 
           <div className={styles.ctas}>
@@ -101,6 +96,11 @@ export default function Hero() {
               <span>WhatsApp</span>
             </a>
           </div>
+
+          <p className={styles.complement}>
+            On s'occupe de tout pour vous : stratégie, publicités, contenus,
+            campagnes, optimisation et génération de prospects.
+          </p>
 
           <div className={styles.trust}>
             <div className={styles.trustItem}>
