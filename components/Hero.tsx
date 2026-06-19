@@ -4,10 +4,13 @@ import {
   TrendIcon,
   StarIcon,
   CheckIcon,
-  MonitorIcon,
-  SearchGlyph,
-  GoogleGIcon,
   ArrowRightIcon,
+  PlayIcon,
+  EyeIcon,
+  ClickIcon,
+  VideoIcon,
+  HeartIcon,
+  MegaphoneIcon,
 } from "./icons";
 import styles from "./Hero.module.css";
 
@@ -135,78 +138,114 @@ export default function Hero() {
               <span className={styles.dot1} />
               <span className={styles.dot2} />
               <span className={styles.dot3} />
-              <span className={styles.previewTab}>
-                <MonitorIcon width={14} height={14} />
-                Ordinateur
+              <span className={styles.studioBrand}>
+                <VideoIcon width={14} height={14} />
+                NHBoost Studio
+              </span>
+              <span className={styles.liveTag}>
+                <span className={styles.liveTagDot} />
+                Live
               </span>
             </div>
 
             <div className={styles.previewBody}>
-              <div className={styles.searchBar}>
-                <GoogleGIcon className={styles.googleG} />
-                <span className={styles.searchQuery}>
-                  agence google ads bruxelles
-                </span>
-                <SearchGlyph
-                  className={styles.searchGlyph}
-                  width={18}
-                  height={18}
-                />
-              </div>
-
-              <div className={styles.adResult}>
-                <div className={styles.adTopRow}>
-                  <span className={styles.adBadge}>Annonce</span>
-                  <ArrowRightIcon
-                    className={styles.adRowArrow}
-                    width={16}
-                    height={16}
-                  />
+              <div className={styles.videoBlock}>
+                <div className={styles.videoLabel}>
+                  <MegaphoneIcon width={12} height={12} />
+                  Vidéo publicitaire — Campagne active
                 </div>
-
-                <div className={styles.adUrlRow}>
-                  <span className={styles.adFavicon} aria-hidden="true">
-                    <span className={styles.faviconLetter}>N</span>
+                <div className={styles.videoPlayer}>
+                  <div className={styles.videoThumb}>
+                    <div className={styles.videoOverlay} />
+                    <div className={styles.videoSparkles}>
+                      <span style={{ top: "18%", left: "22%" }} />
+                      <span style={{ top: "62%", left: "78%" }} />
+                      <span style={{ top: "40%", left: "55%" }} />
+                    </div>
+                    <button
+                      type="button"
+                      className={styles.playBtn}
+                      aria-label="Lire la vidéo"
+                    >
+                      <PlayIcon width={22} height={22} />
+                    </button>
+                    <span className={styles.videoSponsored}>Sponsorisé</span>
+                    <span className={styles.videoDuration}>0:30</span>
+                  </div>
+                </div>
+                <div className={styles.videoStats}>
+                  <span className={styles.vStat}>
+                    <EyeIcon width={14} height={14} />
+                    <strong>12,4K</strong> vues
                   </span>
-                  <span className={styles.adUrl}>www.nhboost.be</span>
-                </div>
-
-                <h3 className={styles.adTitle}>
-                  Agence Google Ads Bruxelles | Plus de Clients
-                </h3>
-
-                <p className={styles.adDescription}>
-                  Multipliez votre chiffre d'affaires avec des campagnes Google
-                  Ads optimisées. NHBoost génère plus de demandes qualifiées,
-                  plus de rendez-vous et plus de clients.
-                </p>
-
-                <div className={styles.adSitelinks}>
-                  <span>Google Ads</span>
-                  <span className={styles.sitelinkDot}>·</span>
-                  <span>Prospects qualifiés</span>
-                  <span className={styles.sitelinkDot}>·</span>
-                  <span>Campagnes</span>
-                  <span className={styles.sitelinkDot}>·</span>
-                  <span>Contact</span>
+                  <span className={styles.vStat}>
+                    <HeartIcon width={14} height={14} />
+                    <strong>8,2%</strong> engagement
+                  </span>
+                  <span className={`${styles.vStat} ${styles.vStatHighlight}`}>
+                    <ClickIcon width={14} height={14} />
+                    <strong>+247</strong> clics
+                  </span>
                 </div>
               </div>
 
-              <div className={styles.previewMetrics}>
-                <div className={styles.metric}>
-                  <span className={styles.metricValue}>1 248</span>
-                  <span className={styles.metricLabel}>Leads / mois</span>
+              <div className={styles.platformsBlock}>
+                <span className={styles.platformsLabel}>
+                  Diffusion multi-plateformes
+                </span>
+                <div className={styles.platformsRow}>
+                  <span className={`${styles.platformPill} ${styles.platG}`}>
+                    <span className={styles.platLogo}>G</span> Google Ads
+                  </span>
+                  <span className={`${styles.platformPill} ${styles.platM}`}>
+                    <span className={styles.platLogo}>M</span> Meta
+                  </span>
+                  <span className={`${styles.platformPill} ${styles.platL}`}>
+                    <span className={styles.platLogo}>in</span> LinkedIn
+                  </span>
+                  <span className={`${styles.platformPill} ${styles.platT}`}>
+                    <span className={styles.platLogo}>♪</span> TikTok
+                  </span>
                 </div>
-                <div className={styles.metricSep} />
-                <div className={styles.metric}>
-                  <span className={styles.metricValue}>312</span>
-                  <span className={styles.metricLabel}>Rendez-vous</span>
+              </div>
+
+              <div className={styles.leadsBlock}>
+                <div className={styles.leadsHeader}>
+                  <span className={styles.leadsTitle}>
+                    Leads générés <span className={styles.leadsLiveDot} />
+                  </span>
+                  <span className={styles.leadsTotal}>+47 cette semaine</span>
                 </div>
-                <div className={styles.metricSep} />
-                <div className={styles.metric}>
-                  <span className={styles.metricValue}>×3,2</span>
-                  <span className={styles.metricLabel}>ROI</span>
-                </div>
+                <ul className={styles.leadsList}>
+                  <li className={styles.leadItem}>
+                    <span className={styles.leadAv}>M</span>
+                    <span className={styles.leadDetail}>
+                      <span className={styles.leadName}>Marie D.</span>
+                      <span className={styles.leadMeta}>
+                        Formulaire complété
+                      </span>
+                    </span>
+                    <span className={styles.leadTime}>il y a 2 min</span>
+                  </li>
+                  <li className={styles.leadItem}>
+                    <span className={styles.leadAv}>K</span>
+                    <span className={styles.leadDetail}>
+                      <span className={styles.leadName}>Karim B.</span>
+                      <span className={styles.leadMeta}>
+                        Appel demandé
+                      </span>
+                    </span>
+                    <span className={styles.leadTime}>il y a 4 min</span>
+                  </li>
+                  <li className={styles.leadItem}>
+                    <span className={styles.leadAv}>S</span>
+                    <span className={styles.leadDetail}>
+                      <span className={styles.leadName}>Sophie L.</span>
+                      <span className={styles.leadMeta}>Devis demandé</span>
+                    </span>
+                    <span className={styles.leadTime}>il y a 8 min</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -219,17 +258,22 @@ export default function Hero() {
               </span>
             </div>
             <div className={styles.mobileBody}>
-              <span className={styles.mobileAdBadge}>Annonce</span>
-              <div className={styles.mobileUrlRow}>
-                <span className={styles.mobileFavicon}>N</span>
-                <span className={styles.mobileUrl}>nhboost.be</span>
+              <div className={styles.mobileVideo}>
+                <div className={styles.mobileVideoOverlay} />
+                <button
+                  type="button"
+                  className={styles.mobilePlay}
+                  aria-label="Lire la vidéo"
+                >
+                  <PlayIcon width={16} height={16} />
+                </button>
+                <span className={styles.mobileSponsored}>Sponsorisé</span>
               </div>
               <h4 className={styles.mobileTitle}>
-                Agence Google Ads Bruxelles | Prospects Qualifiés
+                Multipliez vos clients avec NHBoost
               </h4>
               <p className={styles.mobileDesc}>
-                NHBoost crée, gère et optimise vos campagnes Google Ads pour
-                générer plus de demandes qualifiées à Bruxelles.
+                Vidéo, pub, génération de leads — on s'occupe de tout pour vous.
               </p>
               <button className={styles.mobileCta} type="button">
                 <PhoneIcon width={14} height={14} />
