@@ -1,0 +1,77 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: saturate(140%) blur(16px);
+  -webkit-backdrop-filter: saturate(140%) blur(16px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.brand:hover {
+  opacity: 0.85;
+}
+
+.logo {
+  height: 38px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 520px) {
+  .logo {
+    height: 30px;
+  }
+}
+
+.phoneCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--color-blue-dark);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 8px 24px rgba(42, 46, 94, 0.25);
+}
+
+.phoneCta:hover {
+  transform: translateY(-1px);
+  background: var(--color-blue-light);
+  box-shadow: 0 12px 32px rgba(90, 156, 196, 0.45);
+}
+
+.phoneIcon {
+  flex-shrink: 0;
+}
+
+.phoneShort {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .phoneText {
+    display: none;
+  }
+  .phoneShort {
+    display: inline;
+  }
+}
