@@ -252,7 +252,7 @@ export default function Hero() {
               <div className={styles.mobileVideo}>
                 <video
                   className={styles.mobileVideoEl}
-                  src="https://hamza.nhboost-agency.com/assets/header-video.mp4"
+                  src="https://hamza.nhboost-agency.com/assets/testimonial-2.mp4"
                   autoPlay
                   muted
                   loop
