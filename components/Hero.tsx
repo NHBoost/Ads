@@ -42,7 +42,7 @@ export default function Hero() {
       </div>
 
       <div className={`container ${styles.inner}`}>
-        <div className={styles.copy}>
+        <div className={styles.copyTop}>
           <div className={styles.eyebrowRow}>
             <span className={styles.liveBadge}>
               <span className={styles.liveDot} />
@@ -65,7 +65,9 @@ export default function Hero() {
             Des prospects qualifiés qui contactent votre entreprise — chaque
             semaine.
           </p>
+        </div>
 
+        <div className={styles.copyBottom}>
           <div className={styles.ctas}>
             <a
               href="tel:+32496053286"

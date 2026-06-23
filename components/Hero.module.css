@@ -93,16 +93,36 @@
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 56px;
-  align-items: center;
+  gap: 32px;
   padding-bottom: 80px;
 }
+
+.copyTop { order: 1; }
+.visual { order: 2; }
+.copyBottom { order: 3; }
 
 @media (min-width: 1024px) {
   .inner {
     grid-template-columns: 1.05fr 1fr;
-    gap: 72px;
+    grid-template-areas:
+      "copy-top visual"
+      "copy-bottom visual";
+    gap: 24px 72px;
     padding-bottom: 96px;
+    align-items: start;
+  }
+  .copyTop {
+    grid-area: copy-top;
+    order: 0;
+  }
+  .copyBottom {
+    grid-area: copy-bottom;
+    order: 0;
+  }
+  .visual {
+    grid-area: visual;
+    order: 0;
+    align-self: center;
   }
 }
 
