@@ -4,8 +4,6 @@ import {
   TrendIcon,
   StarIcon,
   CheckIcon,
-  ArrowRightIcon,
-  PlayIcon,
   EyeIcon,
   ClickIcon,
   VideoIcon,
@@ -64,9 +62,8 @@ export default function Hero() {
           </h1>
 
           <p className={styles.subtitle}>
-            NHBoost vous génère plus de demandes qualifiées, plus de rendez-vous,
-            plus de clients et plus de chiffre d'affaires grâce à un système
-            d'acquisition clé en main.
+            Des prospects qualifiés qui contactent votre entreprise — chaque
+            semaine.
           </p>
 
           <div className={styles.ctas}>
@@ -98,8 +95,7 @@ export default function Hero() {
           </div>
 
           <p className={styles.complement}>
-            On s'occupe de tout pour vous : stratégie, publicités, contenus,
-            campagnes, optimisation et génération de prospects.
+            Stratégie, campagnes, optimisation : on gère tout pour vous.
           </p>
 
           <div className={styles.trust}>
@@ -156,19 +152,16 @@ export default function Hero() {
                 </div>
                 <div className={styles.videoPlayer}>
                   <div className={styles.videoThumb}>
+                    <video
+                      className={styles.videoEl}
+                      src="https://hamza.nhboost-agency.com/assets/header-video.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                    />
                     <div className={styles.videoOverlay} />
-                    <div className={styles.videoSparkles}>
-                      <span style={{ top: "18%", left: "22%" }} />
-                      <span style={{ top: "62%", left: "78%" }} />
-                      <span style={{ top: "40%", left: "55%" }} />
-                    </div>
-                    <button
-                      type="button"
-                      className={styles.playBtn}
-                      aria-label="Lire la vidéo"
-                    >
-                      <PlayIcon width={22} height={22} />
-                    </button>
                     <span className={styles.videoSponsored}>Sponsorisé</span>
                     <span className={styles.videoDuration}>0:30</span>
                   </div>
@@ -228,19 +221,17 @@ export default function Hero() {
                     <span className={styles.leadTime}>il y a 2 min</span>
                   </li>
                   <li className={styles.leadItem}>
-                    <span className={styles.leadAv}>K</span>
+                    <span className={styles.leadAv}>T</span>
                     <span className={styles.leadDetail}>
-                      <span className={styles.leadName}>Karim B.</span>
-                      <span className={styles.leadMeta}>
-                        Appel demandé
-                      </span>
+                      <span className={styles.leadName}>Thomas R.</span>
+                      <span className={styles.leadMeta}>Appel demandé</span>
                     </span>
                     <span className={styles.leadTime}>il y a 4 min</span>
                   </li>
                   <li className={styles.leadItem}>
-                    <span className={styles.leadAv}>S</span>
+                    <span className={styles.leadAv}>I</span>
                     <span className={styles.leadDetail}>
-                      <span className={styles.leadName}>Sophie L.</span>
+                      <span className={styles.leadName}>Inès K.</span>
                       <span className={styles.leadMeta}>Devis demandé</span>
                     </span>
                     <span className={styles.leadTime}>il y a 8 min</span>
@@ -259,21 +250,23 @@ export default function Hero() {
             </div>
             <div className={styles.mobileBody}>
               <div className={styles.mobileVideo}>
+                <video
+                  className={styles.mobileVideoEl}
+                  src="https://hamza.nhboost-agency.com/assets/header-video.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                />
                 <div className={styles.mobileVideoOverlay} />
-                <button
-                  type="button"
-                  className={styles.mobilePlay}
-                  aria-label="Lire la vidéo"
-                >
-                  <PlayIcon width={16} height={16} />
-                </button>
                 <span className={styles.mobileSponsored}>Sponsorisé</span>
               </div>
               <h4 className={styles.mobileTitle}>
-                Multipliez vos clients avec NHBoost
+                Plus de clients avec NHBoost
               </h4>
               <p className={styles.mobileDesc}>
-                Vidéo, pub, génération de leads — on s'occupe de tout pour vous.
+                Vidéo, pub, leads — on gère tout pour vous.
               </p>
               <button className={styles.mobileCta} type="button">
                 <PhoneIcon width={14} height={14} />

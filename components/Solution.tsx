@@ -157,25 +157,25 @@ export default function Solution() {
               </div>
               <div className={styles.stageBody}>
                 <div className={styles.leadRow}>
-                  <span className={styles.leadAvatar}>K</span>
+                  <span className={styles.leadAvatar}>J</span>
                   <span className={styles.leadInfo}>
-                    <span className={styles.leadName}>Karim B.</span>
+                    <span className={styles.leadName}>Jean P.</span>
                     <span className={styles.leadMeta}>RDV demain 10h</span>
                   </span>
                   <span className={styles.leadDot} />
                 </div>
                 <div className={styles.leadRow}>
-                  <span className={styles.leadAvatar}>S</span>
+                  <span className={styles.leadAvatar}>L</span>
                   <span className={styles.leadInfo}>
-                    <span className={styles.leadName}>Sophie L.</span>
+                    <span className={styles.leadName}>Léa M.</span>
                     <span className={styles.leadMeta}>Devis demandé</span>
                   </span>
                   <span className={styles.leadDot} />
                 </div>
                 <div className={styles.leadRow}>
-                  <span className={styles.leadAvatar}>M</span>
+                  <span className={styles.leadAvatar}>Y</span>
                   <span className={styles.leadInfo}>
-                    <span className={styles.leadName}>Mehdi A.</span>
+                    <span className={styles.leadName}>Yanis C.</span>
                     <span className={styles.leadMeta}>Appel à recontacter</span>
                   </span>
                   <span className={styles.leadDot} />

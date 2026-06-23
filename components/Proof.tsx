@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { StarIcon, PlayIcon, CheckIcon } from "./icons";
+import { StarIcon, CheckIcon } from "./icons";
 import styles from "./Proof.module.css";
 
 const STATS = [
@@ -94,18 +94,21 @@ export default function Proof() {
         </div>
 
         <Reveal className={styles.videoBlock}>
-          <div className={styles.videoCard}>
-            <div className={styles.videoPlay}>
-              <PlayIcon className={styles.playIcon} />
-            </div>
-            <div className={styles.videoMeta}>
-              <span className={styles.videoLabel}>Témoignage vidéo</span>
+          <figure className={styles.videoCard}>
+            <video
+              className={styles.testimonialVideo}
+              src="https://hamza.nhboost-agency.com/assets/testimonial-2.mp4"
+              controls
+              playsInline
+              preload="metadata"
+            />
+            <figcaption className={styles.videoCaption}>
+              <span className={styles.videoLabel}>Témoignage client</span>
               <span className={styles.videoName}>
                 « Comment NHBoost a transformé mon activité »
               </span>
-            </div>
-            <div className={styles.videoBadge}>Bientôt disponible</div>
-          </div>
+            </figcaption>
+          </figure>
         </Reveal>
 
         <Reveal className={styles.sectors}>
