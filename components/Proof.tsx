@@ -100,7 +100,7 @@ export default function Proof() {
               src="https://hamza.nhboost-agency.com/assets/testimonial-2.mp4"
               controls
               playsInline
-              preload="metadata"
+              preload="none"
             />
             <figcaption className={styles.videoCaption}>
               <span className={styles.videoLabel}>Témoignage client</span>

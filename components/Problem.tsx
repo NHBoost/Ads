@@ -43,12 +43,13 @@ export default function Problem() {
           <Reveal className={styles.visual}>
             <div className={styles.imageWrap}>
               <Image
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=720&q=70&auto=format&fit=crop"
                 alt="Dirigeant qui réfléchit à la croissance de son entreprise"
-                width={900}
-                height={1100}
+                width={720}
+                height={880}
                 className={styles.image}
-                sizes="(max-width: 1024px) 100vw, 480px"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 480px"
+                loading="lazy"
               />
               <div className={styles.imageOverlay} aria-hidden="true" />
 

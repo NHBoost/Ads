@@ -1,11 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800"],
+  preload: true,
+  adjustFontFallback: true,
 });
 
 const SITE_URL = "https://nhboost.agency";
@@ -57,7 +62,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={inter.variable}>
-      <body>{children}</body>
+      <head>
+        <link
+          rel="preconnect"
+          href="https://hamza.nhboost-agency.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://hamza.nhboost-agency.com" />
+        <link
+          rel="preconnect"
+          href="https://images.unsplash.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
+      <body>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
